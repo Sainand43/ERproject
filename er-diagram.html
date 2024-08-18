@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -19,13 +20,28 @@
             max-width: 90%;
             height: auto;
             border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="er-diagram-container">
-        <!-- Replace the src with your ER diagram image URL -->
         <img src="civic_fd.jpg" alt="ER Diagram">
     </div>
+    <!-- Button to go back to a specific slide in Canva -->
+    <a href="https://erproject.my.canva.site/view?page=7" class="back-button">Go Back to Presentation</a>
 </body>
 </html>
