@@ -40,28 +40,9 @@
 <body>
     <div class="er-diagram-container">
         <!-- Replace with your ER diagram image -->
-        <img id="zoomable-image" src="erd.png" alt="ER Diagram">
+        <img src="erd.png" alt="ER Diagram">
     </div>
     <!-- Button to go back to a specific slide in Canva -->
     <a href="https://www.canva.com/design/DAGOLMHwIVE/puRv5ZzRZJ3EQg_onukOpQ/view?utm_content=DAGOLMHwIVE&utm_campaign=designshare&utm_medium=link&utm_source=editor?page=7#7" class="back-button">Go Back to Presentation</a>
-     <script>
-        const image = document.getElementById('zoomable-image');
-        let scale = 1;
-
-        // Zoom in/out with mouse scroll
-        window.addEventListener('wheel', (event) => {
-            event.preventDefault();
-            if (event.deltaY < 0) {
-                scale += 0.1; // Zoom in
-            } else {
-                scale -= 0.1; // Zoom out
-            }
-
-            // Limit the scale
-            scale = Math.min(Math.max(0.5, scale), 3); // Between 0.5x and 3x zoom
-
-            image.style.transform = scale(${scale});
-        });
-     </script>
 </body>
 </html>
