@@ -6,7 +6,7 @@
     <title>ER Diagram</title>
     <style>
         body {
-		    display: flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -17,19 +17,16 @@
         }
 
         .er-diagram-container img {
-            width: auto; 
-            height: auto;   
-            margin: auto;
-	    margin-bottom: 20px;
-	    transition: transform 0.2s ease;
+            max-width: 90%; /* Responsive width */
+            height: auto;   /* Maintain aspect ratio */
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
         }
 
         .back-button {
             padding: 10px 20px;
             background-color: #3498db;
             color: white;
-	    width: 200px; 
-            height: 150px; 
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
@@ -42,9 +39,8 @@
 </head>
 <body>
     <div class="er-diagram-container">
-        <img src="erd.jpg" alt="ER Diagram">
+        <img src="erd.png" alt="ER Diagram">
     </div>
     <a href="https://www.canva.com/design/DAGOLMHwIVE/puRv5ZzRZJ3EQg_onukOpQ/view?utm_content=DAGOLMHwIVE&utm_campaign=designshare&utm_medium=link&utm_source=editor&page=7#7" class="back-button">Go Back to Presentation</a>
-	
 </body>
 </html>
